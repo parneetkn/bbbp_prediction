@@ -5,10 +5,10 @@ This repository demonstrates the prediction of **Blood-Brain Barrier (BBB) perme
 
 🔗 **Dataset Source**: [MDPI - Blood-Brain Barrier Permeability Study](https://www.mdpi.com/1420-3049/26/24/7428)  
 
-### 📊 Dataset Information  
+### Dataset Information  
 The dataset consists of molecular structures in **SMILES format** along with permeability labels (0 or 1), which were converted into **RDKit descriptors** for machine learning analysis. These descriptors capture key chemical properties of the molecules, aiding in BBB permeability classification.  
 
-### ⚙️ Methodology  
+### Methodology  
 1. **Data Preprocessing**  
    - Molecular descriptors were extracted using **RDKit**.
    - Checking for na values and removing the columns that have all the values as zero
@@ -21,13 +21,20 @@ The dataset consists of molecular structures in **SMILES format** along with per
      - **Random Forest feature importances**  
      - **SelectKBest (ANOVA F-score)**  
 
-### 📈 Results & Visualization  
+### Results & Visualization  
 - **Feature Importance Plots**:  
   - Top 10 important features were visualized from **Random Forest** and **SelectKBest**.  
 - **Performance Metrics**:  
-  - Confusion Matrix, Accuracy, Precision, Recall, F1-Score, and ROC-AUC Score were calculated.  
+  - Confusion Matrix, Accuracy, Precision, Recall, F1-Score, and ROC-AUC Score were calculated.
+   
+### Files in this repository
+1. bbbp_classification.ipynb - analysis notebook
+2. feature_importance_skb.png - top 10 features using SKB
+3. feature_importance_RF.png - top 10 features using RFImportance
+
 
 ### 🛠️ Dependencies  
-Ensure you have the following Python libraries installed:  
+The following python libraries were used:  
 ```bash
 pip install pandas numpy rdkit scikit-learn matplotlib seaborn
+
