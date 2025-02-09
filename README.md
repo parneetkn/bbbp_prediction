@@ -1,12 +1,12 @@
 ## Blood-Brain Barrier Permeability Prediction using ML
 
-### 📌 Overview  
-This repository demonstrates the prediction of **Blood-Brain Barrier (BBB) permeability** using a **Random Forest model**. The model is trained on molecular descriptor data derived from **SMILES** representations of compounds. The dataset was sourced from the following research article:  
+### Overview  
+This repository demonstrates the prediction of **Blood-Brain Barrier (BBB) permeability** using a **Random Forest model**. The model is trained on molecular descriptor data derived from **SMILES** representations of compounds.  
 
 🔗 **Dataset Source**: [MDPI - Blood-Brain Barrier Permeability Study](https://www.mdpi.com/1420-3049/26/24/7428)  
 
 ### Dataset Information  
-The dataset consists of molecular structures in **SMILES format** along with permeability labels (0 or 1), which were converted into **RDKit descriptors** for machine learning analysis. These descriptors capture key chemical properties of the molecules, aiding in BBB permeability classification.  
+The dataset consists of molecular structures in **SMILES format** along with permeability labels (0 or 1), which were converted into **RDKit descriptors** for machine learning analysis.  
 
 ### Methodology  
 1. **Data Preprocessing**  
